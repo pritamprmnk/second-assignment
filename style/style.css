@@ -450,7 +450,7 @@ padding: 133px 150px 120px 150px;
 
   .deal-card.large{
     width: 100%;
-    flex-direction: column;
+    height: 200px;
  
   }
 
@@ -463,3 +463,93 @@ padding: 133px 150px 120px 150px;
     padding: 4px 6px;
   }
 }
+
+
+/*-------fifth-section-style-------*/
+
+.subscribe-section {
+  background: url('../images/news-letter-bg.png') center/cover no-repeat;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 120px auto 50px auto;
+}
+
+.overlay {
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.overlay h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+  width: 60%;
+  max-width: 500px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+}
+
+.subscribe-form button {
+  background: #e67e22;
+  border: none;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 16px;
+
+}
+
+.subscribe-form button:hover {
+  background: #d35400;
+}
+
+/*------- fifth-section-responsive-style--------- */
+
+@media screen and (max-width: 576px){
+
+    .overlay h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .subscribe-form {
+ 
+    flex-direction:column;
+    width: 80%;
+  }
+
+  .subscribe-form input {
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .subscribe-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+    
